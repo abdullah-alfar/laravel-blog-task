@@ -10,6 +10,7 @@ public/media/
 public/build/
 /vendor
 /.idea
+/.github
 /.vagrant
 .env
 .php_cs.cache
@@ -20,3 +21,4 @@ public/build/
 .phpunit.result.cache
 pint.json
 storage/media-library/temp
+dist/

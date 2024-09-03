@@ -30,16 +30,12 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
         ];
     }
-
-    /**
-     * Indicate that the user is anakin.
-     */
     public function anakin(): Factory
     {
         return $this->state(function () {
             return [
-                'name' => 'Anakin',
-                'email' => 'anakin@skywalker.st'
+                'name' => 'test user',
+                'email' => 'test@example.com'
             ];
         });
     }
