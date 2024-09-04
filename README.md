@@ -40,12 +40,6 @@ And then, compile the assets :
 $ yarn dev # or yarn watch
 ```
 
-Starting job for newsletter :
-```bash
-$ php artisan tinker
-> PrepareNewsletterSubscriptionEmail::dispatch();
-```
-
 Generating fake data :
 ```bash
 $ php artisan db:seed --class=DevDatabaseSeeder

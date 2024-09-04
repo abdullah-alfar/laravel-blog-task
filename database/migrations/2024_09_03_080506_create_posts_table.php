@@ -15,7 +15,7 @@ return new class extends Migration
             $table->increments('id');
             $table->integer('author_id')->unsigned()->default(0);
             $table->foreign('author_id')->references('id')->on('users')->onDelete('cascade');
-            $table->string('title');
+            $table->string('title')->index();
             $table->text('content');
             $table->datetime('posted_at');
             $table->timestamps();

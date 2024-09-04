@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->integer('thumbnail_id')->unsigned()->nullable();
-            $table->foreign('thumbnail_id')->references('id')->on('media');
+            //$table->foreign('thumbnail_id')->references('id')->on('media');
         });
     }
 
